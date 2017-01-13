@@ -1,3 +1,5 @@
+@import "variables";
+
 $browser-prefixes: false !default;
 $position-default: null !default;
 
@@ -155,4 +157,20 @@ $position-default: null !default;
 	@else {
 		transform: translateY(-50%);
 	}
+}
+
+//Media
+@mixin MQ($canvas){
+	@if $canvas == xs {
+    @media only screen and (max-width: $xs) { @content; }
+  }
+	@else if $canvas == sm {
+    @media only screen and (max-width: $sm) { @content; }
+  }
+	@else if $canvas == md {
+    @media only screen and (max-width: $md) { @content; }
+  }
+	@else if $canvas == lg {
+    @media only screen and (max-width: $lg) { @content; }
+  }
 }

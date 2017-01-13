@@ -4,6 +4,15 @@
 	.ulmart__logo{
 		float: left;
 		margin-top: 24px;
+		@include MQ(sm) {
+			margin-left: 10px;
+		}
+		@include MQ(xs) {
+			display: block;
+			float: none;
+			text-align: center;
+			margin-left: 0;
+		}
 	}
 	.ulmart__shop{
 		display: block;
@@ -16,6 +25,14 @@
 		border-radius: 30px;
 		margin: 20px 0;
 		box-shadow: 1px 1px 1px rgba(142,27,52,.5);
+		@include MQ(sm) {
+			margin-right: 10px;
+		}
+		@include MQ(xs) {
+			float: none;
+			font-size: 1em;
+			margin-right: 0;
+		}
 		&:hover{
 			background-color: #ff5534;
 			background-image: -webkit-linear-gradient(#ff5534 0,#e4003a 100%);
@@ -55,4 +72,12 @@
 
 .title__desc{
 	font-size: em($h1desc);
+}
+
+.block__example{
+	height: 80px;
+	background-color: red;
+	@include MQ(sm) {
+		background-color: blue;
+	}
 }

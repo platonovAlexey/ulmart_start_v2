@@ -6,9 +6,7 @@
 }
 
 @media only screen and (max-width : 1200px) {
-	.goods__retail__price{
-		margin-left: 0;
-	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -40,12 +38,6 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-	.top__line .ulmart__logo{
-		margin-left: 10px;
-	}
-	.top__line .ulmart__shop{
-		margin-right: 10px;
-	}
 
 }
 
@@ -55,17 +47,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.top__line .ulmart__logo{
-		display: block;
-		float: none;
-		text-align: center;
-		margin-left: 0;
-	}
-	.top__line .ulmart__shop{
-		float: none;
-		font-size: 1em;
-		margin-right: 0;
-	}
+
 }
 
 /* Custom, iPhone Retina */
