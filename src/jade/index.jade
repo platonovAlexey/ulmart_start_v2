@@ -4,9 +4,24 @@ include common/mixins.jade
 body
 	.layout_center_wrapper-project
 		+top-line()
+		section.section__example
+			.container
+				.row
+					h1.title blabla!!!
+					.title__desc
+						|description
+					+grid-4()
+						each item, number in data.slice(0,1)
+							+goods(item)
+					+grid-4()
+						each item, number in data.slice(1,2)
+							+goods(item)
+					+grid-4()
+						each item, number in data.slice(2,3)
+							+goods(item)
 		
 			
 	+footer-text()
 
 
-include blocks/footer-service/footer-service
+	include blocks/footer-service/footer-service
