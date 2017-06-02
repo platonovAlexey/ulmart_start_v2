@@ -1,7 +1,7 @@
 //DEFAULT STYLE//
-.top__line{
+.top-line{
 	position: relative;
-	.ulmart__logo{
+	&__logo{
 		float: left;
 		margin-top: 26px;
 		@include MQ(sm) {
@@ -14,7 +14,7 @@
 			margin-left: 0;
 		}
 	}
-	.ulmart__shop{
+	&__shop{
 		display: block;
 		float: right;
 		font-size: .75em;
@@ -41,9 +41,9 @@
 	}
 }
 
-.top__banner{
+.top-banner{
 	position: relative;
-	.top__banner__img{
+	&__img{
 		display: block;
 		margin: 0 auto;
 		text-align: center;
