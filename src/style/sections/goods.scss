@@ -1,34 +1,107 @@
-/*Товары*/
-.goods__item {
-    overflow: hidden;
-    background-color: #fff;
-    margin-bottom: 40px;
-    border:1px solid #ebebeb;
-    position: relative;
+/*+goods*/
+.goods-wrapper{
+	overflow: hidden;
+	background-color: #fff;
+	margin-bottom: 40px;
+	border:1px solid #ebebeb;
+	position: relative;
 	&:hover{
 		box-shadow: 4px 0px 20px rgba(0,0,0,.2);
 		//cursor:pointer;
 	}
+	&>div{
+		padding: 0 20px;
+	}
 }
 
-.goods__item.goods__item__promocode{
-	min-height: 460px;
-}
-
-.goods__wrap__img{
+.goods-head{
 	margin-bottom: 10px;
+	&__link{
+		width: 300px;
+		height: 250px;
+	}
+	&__img{
+		display: block;
+		margin: 0 auto;
+	}
+	&__name{
+		font-size: 14px;
+		color: #010101;
+		text-align: left;
+	}
 }
 
-.goods__item.goods__item__promocode .goods__wrap__price .price__block{
-	//margin-top: 10px;
+.goods-middle{
+	margin-bottom: 10px;
+	&__price{
+		position: relative;
+		@include clearfix;
+	}
+	&__retail{
+		font-size: 14px;
+		color: #acacac;
+		float: left;
+		margin-left: 37px;
+		margin-top: 21px;
+		position: relative;
+		text-decoration: line-through;
+		@include MQ(lg){
+			margin-left: 0;
+		}
+
+	}
+	&__retail-price{
+    font-size: 16px;
+    color: #010101;
+    float: right;
+	}
+	&__start-price{
+    font-size: 22px;
+    color: #010101;
+    font-weight: 700;
+    float: right;
+	}
+	&__start{
+		font-size: 32px;
+		color: #25232a;
+		font-weight: 900;
+		float: right;
+	}
+	&__text{
+		font-size: 12px;
+    color: grey;
+    float: left;
+    margin-top: 7px;
+	}
+	&__line{
+		@include clearfix;
+	}
 }
 
-.goods__item.goods__item__promocode .goods__link{
-	position: absolute;
-	bottom: 0;
+.goods-bottom{
+	position: relative;
+	&__link{
+		text-align: center;
+		text-decoration: none;
+		font-size: 14px;
+		color: #b2b2b2!important;
+		display: block;
+		border: 1px solid #ed1b35;
+		padding: 10px;
+		width: 100%;
+		&:hover{
+			background-color: #ed1b35;
+			color: #fff !important;
+			cursor: pointer;
+		}
+	}
 }
 
-.promocode{
+.goods-wrapper-name{
+	height: 70px;
+}
+
+.goods-promocode{
 	width: 75%;
 	background: #222221;
 	color: #fff;
@@ -42,7 +115,7 @@
 	}
 }
 
-.goods__sale{
+.goods-sale{
 	color: #fff;
   font-size: 12px;
 	font-weight: 300;
@@ -72,125 +145,6 @@
 	}
 }
 
-	.goods__item > div{
-		padding: 0px 20px;
-	}
-
-	.goods__wrap__price{
-		margin-bottom: 10px;
-	}
-
-	.goods__wrap__name {
-    	height: 70px;
-	}
-
-	.price__block{
-		@include clearfix;
-		//margin-top: 10px;
-	}
-
-	.goods__picture{
-		// padding-top: 20px;
-		display: block;
-		margin: 0 auto;
-		&:hover{
-			cursor: pointer;
-		}
-	}
-
-	.goods__picture__wrap{
-		width: 300px;
-		height: 250px;
-	}
-
-	.goods__vendor{
-		font-size: 10px;
-		color: #808080;
-	}
-
-	.goods__name{
-		font-size: 14px;
-		color: #010101;
-		text-align: left;
-		// margin: 8px 0;
-	}
-
-	.goods__retail, .goods__start{
-		font-size: 12px;
-		color: #808080;
-		float: left;
-	}
-
-	.goods__retail{
-		margin-top: 6px;
-	}
-
-	.goods__start{
-		margin-top: 12px;
-	}
-
-
-	.goods__retail__price{
-		font-size: 14px;
-		color: #acacac;
-		float: left;
-		margin-left: 37px;
-		margin-top: 21px;
-		position: relative;
-		@include MQ(lg){
-			margin-left: 0;
-		}
-		&:after{
-			content: "";
-			display: block;
-			height: 1px;
-			width: 100%;
-			background-color: #808080;
-			transform: rotate(-3deg);
-			position: absolute;
-			top: 8px;
-			left: 0px;
-		}
-	}
-
-	.goods__price__retail{
-		font-size: 16px;
-		color: #010101;
-		float: right;
-	}
-
-	.goods__price__start{
-		font-size: 22px;
-		color: #010101;
-		font-weight: 700;
-		float: right;
-	}
-
-	.goods__start__price{
-		font-size: 32px;
-		color: #25232a;
-		font-weight: 900;
-		float: right;
-	}
-
-	.goods__link{
-		text-align: center;
-		text-decoration: none;
-		font-size: 14px;
-		color: #b2b2b2 !important;
-		display: block;
-		border: 1px solid #ed1b35;
-		padding: 10px;
-		width: 100%;
-		box-sizing: border-box;
-		&:hover{
-			background-color: #ed1b35;
-			color: #fff !important;
-			cursor: pointer;
-		}
-	}
-
-.good__wrapper{
-	position: relative;
-	@include clearfix;
+.goods-wrapper.goods-wrapper-promocode{
+	min-height: 460px;
 }

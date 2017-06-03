@@ -7,3 +7,4 @@ $ git clone https://github.com/platonovAlexey/ulmart_start_v2.git #назван�
 $ cd #название папки
 $ npm install
 ```
+
