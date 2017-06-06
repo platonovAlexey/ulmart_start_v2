@@ -41,8 +41,8 @@
 		font-size: 14px;
 		color: #acacac;
 		float: left;
-		margin-left: 37px;
-		margin-top: 21px;
+		//margin-left: 37px;
+		margin-top: 16px;
 		position: relative;
 		text-decoration: line-through;
 		@include MQ(lg){
@@ -62,7 +62,7 @@
     float: right;
 	}
 	&__start{
-		font-size: 32px;
+		font-size: 30px;
 		color: #25232a;
 		font-weight: 900;
 		float: right;

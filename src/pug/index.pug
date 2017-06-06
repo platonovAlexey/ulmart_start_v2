@@ -10,20 +10,20 @@ body
 		section.block__example
 			.container
 				.row
-					h1.title blabla!!!
-					.title__desc
+					.col-12
+						h1.title blabla!!!
+						.title__desc
 						|description
 					+grid-4()
 						each item, number in data.slice(0,1)
 							+goods(item)
 					+grid-4()
 						each item, number in data.slice(1,2)
-							+goods-promocode(item)
+							+goods(item)
 					+grid-4()
 						each item, number in data.slice(2,3)
-							+goods-auction(item)
-		
-			
+							+goods(item)
+
 	+footer-text()
 
 
