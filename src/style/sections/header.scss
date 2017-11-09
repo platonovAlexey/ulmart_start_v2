@@ -53,18 +53,16 @@
 
 .header{
 	position: relative;
-}
-
-.header__banner{
-	display: block;
-	margin: 0 auto;
-}
-
-.header__title{
-	font-size: 66px;
-	color:#fff;
-	font-weight: bold;
-	text-transform: uppercase;
+	&__banner{
+		display: block;
+		margin: 0 auto;
+	}
+	&__title{
+		font-size: 66px;
+		color:#fff;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
 }
 
 .title{
